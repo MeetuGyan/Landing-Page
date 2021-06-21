@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #ff3cac;
+  background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5);
+}
+
+header {
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+.logo {
+  padding-right: 15px;
+  font-size: 25px;
+}
+
+.brand a {
+  font-size: 25px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-size: 15px;
+}
+
+.nav-section {
+  background: linear-gradient(CurrentColor 0 0) 0 100% /var(--d, 0) 3px no-repeat;
+  transition: 0.5s;
+}
+
+.nav-section:hover {
+  --d: 100%;
+}
+
+.text {
+  border: 2px solid white;
+  font-size: 15px;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  padding: 50px 0 140px;
+}
+
+.header-section_content-title {
+  font-size: 5rem;
+}
+
+.header-section_content-phrase {
+  margin: 15px 0 25px;
+  font-size: 15px;
+}
+
+.register {
+  background: #ff3cac;
+}
+
+.btn {
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav .menu-btn i{
+  cursor: pointer;
+  font-size: 22px;
+  padding-right: 30px;
+  display: none;
+}
+
+#click {
+  display: none;
+}
+
+@media screen and (max-width:900px) {
+
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #ff3cac;
+    background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5);
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  nav .menu-btn i {
+    display: block;
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+  }
+
+  #click:checked ~ .menu-btn i::before {
+    content: '\f00d';
+  }
+
+  .join {
+    display: none;
+  }
+
+  .header-section {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    text-align: center;
+  }
+
+  
+}
+
+
+@media screen and (max-width:1024px) {
+  .header-section_image {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
